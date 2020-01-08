@@ -49,7 +49,8 @@ public class AnimeAdapter extends RecyclerView.Adapter<AnimeAdapter.AnimeHolder>
                                  int position) {
         holder.imagen.setImageResource(items.get(position).getImagen());
         holder.nombre.setText(items.get(position).getNombre());
-        holder.visitas.setText(items.get(position).getVisitas());
+        holder.visitas.setText("Visitas: "+
+                String.valueOf(items.get(position).getVisitas()));
     }
 
     @Override
